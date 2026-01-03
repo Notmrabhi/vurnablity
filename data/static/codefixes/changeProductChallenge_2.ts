@@ -66,7 +66,6 @@ app.use('/rest/basket', security.isAuthorized(), security.appendUserId())
   /* PrivacyRequests: Only POST allowed for authenticated users */
   app.post('/api/PrivacyRequests', security.isAuthorized())
   app.get('/api/PrivacyRequests', security.denyAll())
-  
   app.use('/api/PrivacyRequests/:id', security.denyAll())
   app.post('/api/Addresss', security.appendUserId())
   app.get('/api/Addresss', security.appendUserId(), address.getAddress())
