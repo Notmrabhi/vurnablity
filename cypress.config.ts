@@ -44,6 +44,9 @@ export default defineConfig({
           )[0]
           return couponIntent
         },
+
+
+        
         GetFromMemories (property: string) {
           for (const memory of config.get<MemoryConfig[]>('memories') as any) {
             if (memory[property]) {
