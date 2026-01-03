@@ -70,6 +70,7 @@ app.use('/rest/basket', security.isAuthorized(), security.appendUserId())
   app.post('/api/Addresss', security.appendUserId())
   app.get('/api/Addresss', security.appendUserId(), address.getAddress())
   app.put('/api/Addresss/:id', security.appendUserId())
+  
   app.delete('/api/Addresss/:id', security.appendUserId(), address.delAddressById())
   app.get('/api/Addresss/:id', security.appendUserId(), address.getAddressById())
   app.get('/api/Deliverys', delivery.getDeliveryMethods())
