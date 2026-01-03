@@ -74,4 +74,5 @@ app.use('/rest/basket', security.isAuthorized(), security.appendUserId())
   app.get('/api/Addresss/:id', security.appendUserId(), address.getAddressById())
   app.get('/api/Deliverys', delivery.getDeliveryMethods())
   app.get('/api/Deliverys/:id', delivery.getDeliveryMethod())
+
   
