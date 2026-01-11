@@ -226,7 +226,7 @@ describe('SearchResultComponent', () => {
     expect(basketService.find).toHaveBeenCalled()
     expect(basketService.save).toHaveBeenCalled()
     expect(productService.get).toHaveBeenCalled()
-    
+
     expect(snackBar.open).toHaveBeenCalled()
   })
 
