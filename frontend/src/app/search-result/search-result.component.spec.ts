@@ -244,7 +244,7 @@ describe('SearchResultComponent', () => {
     expect(translateService.get).toHaveBeenCalledWith('BASKET_ADD_SAME_PRODUCT', { product: 'Tomato Juice' })
   })
 
-  it('should translate BASKET_ADD_SAME_PRODUCT message', () => {
+  it('should translate BASKET_ADD_SAME_PRODUCT message ', () => {
     basketService.find.and.returnValue(of({ Products: [{ id: 1 }, { id: 2, name: 'Tomato Juice', BasketItem: { id: 42 } }] }))
     basketService.get.and.returnValue(of({ id: 42, quantity: 5 }))
     basketService.put.and.returnValue(of({ ProductId: 2 }))
