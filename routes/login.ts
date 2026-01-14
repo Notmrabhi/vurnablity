@@ -4,7 +4,6 @@
  */
 import { type Request, type Response, type NextFunction } from 'express'
 import config from 'config'
-
 import * as challengeUtils from '../lib/challengeUtils'
 import { challenges, users } from '../data/datacache'
 import { BasketModel } from '../models/basket'
