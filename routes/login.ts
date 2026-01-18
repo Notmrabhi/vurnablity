@@ -27,6 +27,7 @@ export function login () {
       }).catch((error: Error) => {
         next(error)
       })
+      
   }
   return (req: Request, res: Response, next: NextFunction) => {
     verifyPreLoginChallenges(req) // vuln-code-snippet hide-line
