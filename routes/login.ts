@@ -55,6 +55,7 @@ export function login () {
         next(error)
       })
   }
+
   // vuln-code-snippet end loginAdminChallenge loginBenderChallenge loginJimChallenge
 
   function verifyPreLoginChallenges (req: Request) {
