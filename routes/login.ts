@@ -38,6 +38,7 @@ export function login () {
         if (user.data?.id && user.data.totpSecret !== '') {
           res.status(401).json({
             status: 'totp_token_required',
+            
             data: {
               tmpToken: security.authorize({
                 userId: user.data.id,
